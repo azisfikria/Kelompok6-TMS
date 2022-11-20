@@ -24,12 +24,11 @@ public class DriverSingleton {
         return driver;
     }
 
-    public static DriverSingleton getInstance(String driver) {
+    public static void getInstance(String driver) {
         if(instance == null) {
             instance = new DriverSingleton(driver);
         }
 
-        return instance;
     }
 
     public static WebDriver getDriver() {
